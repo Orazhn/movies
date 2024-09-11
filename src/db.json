@@ -1,0 +1,387 @@
+{
+    "page": 1,
+    "results": [
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          35,
+          878
+        ],
+        "id": 533535,
+        "poster": "src/database/posters/first-poster.jpg", 
+        "original_language": "en",
+        "original_title": "Deadpool & Wolverine",
+        "overview": "A listless Wade Wilson toils away in civilian life with his days as the morally flexible mercenary, Deadpool, behind him. But when his homeworld faces an existential threat, Wade must reluctantly suit-up again with an even more reluctant Wolverine.",
+        "popularity": 3927.655,
+        "release_date": "2024-07-24",
+        "title": "Deadpool & Wolverine",
+        "video": false,
+        "vote_average": 7.771,
+        "vote_count": 2512
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          16,
+          10751,
+          12,
+          35
+        ],
+        "id": 1022789,
+        "poster": "src/database/posters/second-poster.jpg",
+        "original_language": "en",
+        "original_title": "Inside Out 2",
+        "overview": "Teenager Riley's mind headquarters is undergoing a sudden demolition to make room for something entirely unexpected: new Emotions! Joy, Sadness, Anger, Fear and Disgust, who’ve long been running a successful operation by all accounts, aren’t sure how to feel when Anxiety shows up. And it looks like she’s not alone.",
+        "popularity": 1982.755,
+        "release_date": "2024-06-11",
+        "title": "Inside Out 2",
+        "video": false,
+        "vote_average": 7.691,
+        "vote_count": 3165
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          16,
+          10751,
+          35,
+          28
+        ],
+        "id": 519182,
+        "poster": "src/database/posters/third-poster.jpg", 
+        "original_language": "en",
+        "original_title": "Despicable Me 4",
+        "overview": "Gru and Lucy and their girls—Margo, Edith and Agnes—welcome a new member to the Gru family, Gru Jr., who is intent on tormenting his dad. Gru also faces a new nemesis in Maxime Le Mal and his femme fatale girlfriend Valentina, forcing the family to go on the run.",
+        "popularity": 1673.039,
+        "release_date": "2024-06-20",
+        "title": "Despicable Me 4",
+        "video": false,
+        "vote_average": 7.262,
+        "vote_count": 1330
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          12,
+          18
+        ],
+        "id": 718821,
+        "poster": "src/database/posters/forth-poster.jpg", 
+        "original_language": "en",
+        "original_title": "Twisters",
+        "overview": "As storm season intensifies, the paths of former storm chaser Kate Carter and reckless social-media superstar Tyler Owens collide when terrifying phenomena never seen before are unleashed. The pair and their competing teams find themselves squarely in the paths of multiple storm systems converging over central Oklahoma in the fight of their lives.",
+        "popularity": 1443.538,
+        "release_date": "2024-07-10",
+        "title": "Twisters",
+        "video": false,
+        "vote_average": 7.016,
+        "vote_count": 1162
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          53,
+          80
+        ],
+        "id": 5492,
+        "poster": "src/database/posters/fifth-poster.jpg",
+        "original_language": "en",
+        "original_title": "Gunner",
+        "overview": "While on a camping trip in order to reconnect, war veteran Colonel Lee Gunner must save his two sons from a gang of violent bikers when they're kidnapped after accidentally stumbling upon to a massive drug operation.",
+        "popularity": 1284.911,
+        "release_date": "2024-08-16",
+        "title": "Gunner",
+        "video": false,
+        "vote_average": 5.2,
+        "vote_count": 48
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          80,
+          53,
+          35
+        ],
+        "id": 573435,
+        "poster": "src/database/posters/six-poster.jpg",
+        "original_language": "en",
+        "original_title": "Bad Boys: Ride or Die",
+        "overview": "After their late former Captain is framed, Lowrey and Burnett try to clear his name, only to end up on the run themselves.",
+        "popularity": 1373.944,
+        "release_date": "2024-06-05",
+        "title": "Bad Boys: Ride or Die",
+        "video": false,
+        "vote_average": 7.573,
+        "vote_count": 1758
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          80,
+          27,
+          53
+        ],
+        "id": 1226578,
+        "poster": "src/database/posters/seventh-poster.jpg",
+        "original_language": "en",
+        "original_title": "Longlegs",
+        "overview": "FBI Agent Lee Harker is assigned to an unsolved serial killer case that takes an unexpected turn, revealing evidence of the occult. Harker discovers a personal connection to the killer and must stop him before he strikes again.",
+        "popularity": 1281.009,
+        "release_date": "2024-07-10",
+        "title": "Longlegs",
+        "video": false,
+        "vote_average": 6.616,
+        "vote_count": 541
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          35
+        ],
+        "id": 704239,
+        "poster": "src/database/posters/eigth-poster.jpg",
+        "original_language": "en",
+        "original_title": "The Union",
+        "overview": "A New Jersey construction worker goes from regular guy to aspiring spy when his long-lost high school sweetheart recruits him for an espionage mission.",
+        "popularity": 1255.311,
+        "release_date": "2024-08-15",
+        "title": "The Union",
+        "video": false,
+        "vote_average": 6.308,
+        "vote_count": 465
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          10749,
+          18
+        ],
+        "id": 1079091,
+        "poster": "src/database/posters/nine.jpg",
+        "original_language": "en",
+        "original_title": "It Ends with Us",
+        "overview": "When a woman's first love suddenly reenters her life, her relationship with a charming, but abusive neurosurgeon is upended, and she realizes she must learn to rely on her own strength to make an impossible choice for her future.",
+        "popularity": 1035,
+        "release_date": "2024-08-07",
+        "title": "It Ends with Us",
+        "video": false,
+        "vote_average": 6.87,
+        "vote_count": 215
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28
+        ],
+        "id": 1049574,
+        "poster": "src/database/posters/ten.jpg",
+        "original_language": "en",
+        "original_title": "Darkness of Man",
+        "overview": "Russell Hatch, an Interpol operative who takes on the role of father figure to Jayden, the son of an informant killed in a routine raid gone wrong. Years later, Hatch finds himself protecting Jayden and his grandfather from a group of merciless gangs in an all-out turf war, stopping at nothing to protect Jayden and fight anyone getting in his way.",
+        "popularity": 978.482,
+        "release_date": "2024-05-07",
+        "title": "Darkness of Man",
+        "video": false,
+        "vote_average": 6.485,
+        "vote_count": 103
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          35,
+          878
+        ],
+        "id": 1094138,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMmQ2ZGU3ODYtNzA0Yi00NDlhLWIxNzYtM2E2Y2FhOGNjZjIyXkEyXkFqcGc@._V1_.jpg",
+        "original_language": "en",
+        "original_title": "Jackpot!",
+        "overview": "In the near future, a 'Grand Lottery' has been established - the catch: kill the winner before sundown to legally claim their multi-billion dollar jackpot. When Katie Kim mistakenly finds herself with the winning ticket, she reluctantly joins forces with amateur lottery protection agent Noel Cassidy who must get her to sundown in exchange for a piece of her prize.",
+        "popularity": 1032.319,
+        "release_date": "2024-08-13",
+        "title": "Jackpot!",
+        "video": false,
+        "vote_average": 6.435,
+        "vote_count": 353
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          53,
+          27,
+          80,
+          9648
+        ],
+        "id": 1245708,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMzkxODU0NDItNTkzZS00ZmJlLTk5ZjMtMGQ0MzU4ODczM2RkXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "original_language": "en",
+        "original_title": "Crescent City",
+        "overview": "When a ruthless serial killer terrorizes a small Southern town, everyone becomes a suspect -- including local authorities. As the body count rises and the dark mystery deepens, the chief detective becomes haunted by the horrors of his past.",
+        "popularity": 854.293,
+        "release_date": "2024-08-16",
+        "title": "Crescent City",
+        "video": false,
+        "vote_average": 6.048,
+        "vote_count": 31
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          80
+        ],
+        "id": 1160018,
+        "poster": "https://m.media-amazon.com/images/M/MV5BZjI1ZjM3NjUtYTc1Ni00ODJmLWI5YjQtMWZiZTAyNTFiZGY1XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "original_language": "hi",
+        "original_title": "Kill",
+        "overview": "When an army commando finds out his true love is engaged against her will, he boards a New Dehli-bound train in a daring quest to derail the arranged marriage. But when a gang of knife-wielding thieves begin to terrorize innocent passengers on his train, the commando takes them on himself in a death-defying kill-spree to save those around him — turning what should have been a typical commute into an adrenaline-fueled thrill ride.",
+        "popularity": 927.448,
+        "release_date": "2024-07-03",
+        "title": "Kill",
+        "video": false,
+        "vote_average": 6.81,
+        "vote_count": 105
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          27,
+          878
+        ],
+        "id": 945961,
+        "poster": "https://s3.amazonaws.com/nightjarprod/content/uploads/sites/261/2024/08/05154755/b33nnKl1GSFbao4l3fZDDqsMx0F-scaled.jpg",
+        "original_language": "en",
+        "original_title": "Alien: Romulus",
+        "overview": "While scavenging the deep ends of a derelict space station, a group of young space colonizers come face to face with the most terrifying life form in the universe.",
+        "popularity": 877.134,
+        "release_date": "2024-08-13",
+        "title": "Alien: Romulus",
+        "video": false,
+        "vote_average": 7.2,
+        "vote_count": 749
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          27,
+          878,
+          53
+        ],
+        "id": 762441,
+        "poster": "https://m.media-amazon.com/images/M/MV5BNGZmODU3ZDEtMjQwZC00NTA5LThmNWYtYzk5MmY5ZmM4NGIxXkEyXkFqcGdeQXVyMDM2NDM2MQ@@._V1_.jpg", 
+        "original_language": "en",
+        "original_title": "A Quiet Place: Day One",
+        "overview": "As New York City is invaded by alien creatures who hunt by sound, a woman named Sam fights to survive with her cat.",
+        "popularity": 833.715,
+        "release_date": "2024-06-26",
+        "title": "A Quiet Place: Day One",
+        "video": false,
+        "vote_average": 6.842,
+        "vote_count": 1562
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          9648,
+          878,
+          53,
+          27
+        ],
+        "id": 1024721,
+        "poster": "https://m.media-amazon.com/images/M/MV5BN2E0NWNhZWYtMzc5NS00OGUwLTlhZGEtZWFkMDczYjJlNGMzXkEyXkFqcGdeQXVyMTY5Nzc4MDY@._V1_FMjpg_UX1000_.jpg",
+        "original_language": "en",
+        "original_title": "Monolith",
+        "overview": "A desperate young journalist turns to podcasting to salvage her career, but her rush to make headlines leads her to an alien conspiracy.",
+        "popularity": 832.371,
+        "release_date": "2023-10-26",
+        "title": "Monolith",
+        "video": false,
+        "vote_average": 5.664,
+        "vote_count": 73
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          16,
+          35,
+          12,
+          10751
+        ],
+        "id": 831815,
+        "poster": "https://m.media-amazon.com/images/M/MV5BYTFmNDU1YjItZThmYi00NjM3LTk5OGEtODgyMDQ3ODFiYjZhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+        "original_language": "en",
+        "original_title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+        "overview": "When Bikini Bottom is scooped from the ocean, scientific squirrel Sandy Cheeks and her pal SpongeBob SquarePants saddle up for Texas to save their town.",
+        "popularity": 846.227,
+        "release_date": "2024-08-01",
+        "title": "Saving Bikini Bottom: The Sandy Cheeks Movie",
+        "video": false,
+        "vote_average": 6.4,
+        "vote_count": 189
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          53
+        ],
+        "id": 1129598,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMDBlMDYxMDktOTUxMS00MjcxLWE2YjQtNjNhMjNmN2Y3ZDA1XkEyXkFqcGdeQXVyMTM1MTE1NDMx._V1_.jpg",
+        "original_language": "en",
+        "original_title": "Prey",
+        "overview": "A young couple is compelled to leave their Christian missionary station in the Kalahari Desert after being threatened with death by an extremist militant gang. After crashing their aircraft they must battle man and beast for their lives.",
+        "popularity": 694.452,
+        "release_date": "2024-03-15",
+        "title": "Prey",
+        "video": false,
+        "vote_average": 6.446,
+        "vote_count": 205
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          28,
+          80,
+          18
+        ],
+        "id": 959092,
+        "poster": "https://m.media-amazon.com/images/M/MV5BOTM5YmU0OWMtZDAwZi00NmM3LWE4N2MtNGFkYTY1OTYzYWY5XkEyXkFqcGdeQXVyNDM1ODc2NzE@._V1_.jpg",
+        "original_language": "fr",
+        "original_title": "Farang",
+        "overview": "Sam is a professional boxer about to get released from prison. While on parole, his past catches up with him and he has no choice but to flee. Five years later, he has rebuilt a simple life on an exotic island in Thailand with his wife and her daughter, but when he gets blackmailed by a dangerous local godfather, he must embark on a dangerous drug smuggling mission which results in a tragedy. Now has only one purpose: to seek merciless vengeance.",
+        "popularity": 644.301,
+        "release_date": "2023-06-28",
+        "title": "Mayhem!",
+        "video": false,
+        "vote_average": 6.7,
+        "vote_count": 142
+      },
+      {
+        "adult": false,
+        "genre_ids": [
+          16,
+          35,
+          10751,
+          12,
+          28
+        ],
+        "id": 748783,
+        "poster": "https://m.media-amazon.com/images/M/MV5BMWJkOGJiNGItYzFmZi00ODExLWE1NDEtOWQyNzhhYzljODViXkEyXkFqcGdeQXVyMTY3ODkyNDkz._V1_.jpg",
+        "original_language": "en",
+        "original_title": "The Garfield Movie",
+        "overview": "Garfield, the world-famous, Monday-hating, lasagna-loving indoor cat, is about to have a wild outdoor adventure! After an unexpected reunion with his long-lost father – scruffy street cat Vic – Garfield and his canine friend Odie are forced from their perfectly pampered life into joining Vic in a hilarious, high-stakes heist.",
+        "popularity": 681.698,
+        "release_date": "2024-04-30",
+        "title": "The Garfield Movie",
+        "video": false,
+        "vote_average": 7.157,
+        "vote_count": 852
+      }
+    ],
+    "total_pages": 45771,
+    "total_results": 915405
+  }
