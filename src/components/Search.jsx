@@ -1,4 +1,5 @@
 import {useEffect, useState} from 'react';
+import {Link} from "react-router-dom";
 
 
 
@@ -6,18 +7,16 @@ import {useEffect, useState} from 'react';
 function Search(props) {
 
     const [movies, setMovies] = useState([])
-    const [loading, setLoading] = useState(true)
     const [searchValue, setSearchValue] = useState('')
-    const [suggestions, setSuggestions] = useState([])
-    const [results, setResults] = useState([])
+    const [filteredMovies, setFilteredMovies] = useState([])
 
     const getMovies = async () => {
-        setLoading(true);
         try {
             const res = await fetch('src/db.json');
             const data = await res.json();
             setMovies(data.results)
-            setLoading(false);
+            setFilteredMovies(data.results)
+
         } catch (e) {
             console.log(e);
         }
@@ -29,20 +28,10 @@ function Search(props) {
 
     const searchHandler = (e) => {
         setSearchValue(e.target.value)
-        movies.map((movie) => {
-            console.log(movie);
-            movie.title.toLowerCase().slice(1 ,movie.title.length) === searchValue.toLowerCase().slice(1 ,movie.title.length) && setSuggestions([ ...suggestions , movie.title])
-        })
-        drawSuggestion()
+        const filteringMovies = movies.filter(movie => movie.title.toLowerCase().includes(searchValue.toLowerCase()))
+        setFilteredMovies(filteringMovies)
     }
-    function drawSuggestion() {
-        console.log(suggestions)
-        suggestions.length > 0 &&
-        setResults(<div>
-                    {suggestions.map((movieName, index) => <li className='w-full h-10 pl-5 flex bg-white items-center rounded-3xl text-black' key={index}>{movieName}</li>)}
-                </div>)
 
-    }
 
     return (
         <div className='flex flex-col w-4/5 items-center h-10'>
@@ -64,12 +53,23 @@ function Search(props) {
                         x
                     </button>
                 </div>
-            </div>
-            {results}
 
+            </div>
+            <div className = 'absolute bg-gray-800 w-3/5 rounded-xl top-14'>
+                {searchValue.length === 0 ?
+                    <ul>
+                       {movies.map(movie => <Link to = {`/popular/${movie.id}`}> <li className='text-white py-1 pl-6 border-b border-gray-600 hover:bg-gray-700 ' key={movie.id}>{movie.title}</li> </Link> )}
+                    </ul>
+                    :
+                    <ul>
+                        {filteredMovies.map(movie =><Link to = {`/popular/${movie.id}`}> <li className='text-white py-1 pl-6 border-b border-gray-600 hover:bg-gray-700' key={movie.id}>{movie.title}</li> </Link>)}
+                    </ul>
+                }
+            </div>
 
 
         </div>
     )
 }
+
 export default Search;

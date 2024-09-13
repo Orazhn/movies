@@ -12,7 +12,7 @@ export default function Header() {
     return (
         <header className='flex justify-evenly bg-slate-900 items-center z-50 sticky w-full top-0'>
             <div className='w-16 h-16'>
-                <Link to="/homepage">
+                <Link to="/">
                 <img className='text-white' src="src/images/logo-removebg-preview (1).png"/>
                 </Link>
             </div>
