@@ -97,8 +97,8 @@ export default function Card(props) {
                 </Link>
 
 
-            </div>      
-                </div>
+            </div>
+        </div>
 
     </>
   )

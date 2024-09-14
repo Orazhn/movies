@@ -66,22 +66,22 @@ function MoviePage() {
 
 
   return (
-      <div className="font-sans bg-slate-800 h-screen">
+      <div className="font-sans bg-slate-800 h-full">
           <Link to="/popular">
-              <FaArrowLeft className='absolute mt-8 ml-8 ' color='white' size={20}/>
+              <FaArrowLeft className='fixed mt-8 ml-8 ' color='white' size={20}/>
           </Link>
 
-          <div className="p-4 lg:max-w-7xl max-w-2xl max-lg:mx-auto">
-              <div className="grid pt-10 items-start grid-cols-1 lg:grid-cols-5 gap-12">
-                  <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
-                      <div className="bg-gray-800 px-7 rounded-xl">
+          <div className="p-4 lg:max-w-7xl max-w-2xl max-lg:mx-auto bg-slate-800">
+              <div className="grid pt-10 items-start grid-cols-1 lg:grid-cols-5 gap-12 bg-slate-800">
+                  <div className="lg:col-span-3 w-full top-0 text-center bg-slate-800">
+                      <div className="bg-gray-800 px-7 rounded-xl ">
                           <img src={movie.poster} alt="Product"
                                className="w-9/12  rounded object-cover mx-auto"/>
                       </div>
 
                   </div>
 
-                  <div className="lg:col-span-2">
+                  <div className="lg:col-span-2 bg-slate-800">
                       <h2 className="text-3xl font-semibold text-white">{movie.title}</h2>
 
                       <div className="flex space-x-2 mt-4 list-none">
@@ -91,7 +91,7 @@ function MoviePage() {
                           <h4 className="text-white text-base">{movie.vote_count} Reviews</h4>
                       </div>
 
-                      <div className="flex justify-between items-baseline">
+                      <div className="flex justify-between items-baseline bg-slate-800">
                           <div className='flex flex-wrap gap-4 mt-8'>
                               <p className="text-white text-4xl font-semibold">$12</p>
                               <p className="text-gray-400 text-base"><strike>$16</strike> <span
@@ -116,7 +116,13 @@ function MoviePage() {
                           </button>
                       </div>
 
-                      <div className="mt-8 flex flex-col gap-6 opacity-80">
+                      <div className="mt-8 flex flex-col gap-6 opacity-80 bg-slate-800">
+                          <div className=' bg-slate-900 rounded-2xl'>
+                              <video className=' p-3 rounded-lg w-full h-72' autoPlay={true}>
+                                  <source src={movie.trailer} />
+
+                              </video>
+                          </div>
                           <div className='flex flex-col gap-4 p-6 bg-slate-900 rounded-2xl'>
                               <h3 className="text-xl font-semibold text-white">About the Movie</h3>
                               <div className="text-lg text-white">
