@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import {useEffect, useState} from "react";
 import toast, {Toaster} from "react-hot-toast";
-
+import axios from "axios";
 
 function SignUpPage() {
     const [email, setEmail] = useState('');
@@ -17,9 +17,8 @@ function SignUpPage() {
 
     const getUserData = async () => {
         try {
-            const res = await fetch('http://localhost:8080/users');
-            const data = await res.json();
-            setUserData(data)
+            const res = await axios.get('http://localhost:8080/users');
+            setUserData(res)
 
         } catch (e) {
             console.log(e);

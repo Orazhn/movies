@@ -1,6 +1,7 @@
 import {useEffect, useState} from "react";
 import {Link} from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
+import axios from "axios";
 
 function LogInPage() {
     const [email, setEmail] = useState('');
@@ -16,10 +17,8 @@ function LogInPage() {
 
     const getUserData = async () => {
         try {
-            const res = await fetch('http://localhost:8080/users');
-            const data = await res.json();
-            setUserData(data)
-
+            const res = await axios.get('http://localhost:8080/users');
+            setUserData(res)
         } catch (e) {
             console.log(e);
         }

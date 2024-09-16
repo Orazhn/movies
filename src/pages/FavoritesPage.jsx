@@ -1,17 +1,18 @@
 import Header from "../components/Header.jsx";
 import Favorite from "../components/Favorite.jsx";
 import {useEffect, useState} from "react";
+import axios from "axios";
 
 export default function FavoritesPage() {
   const [movies, setMovies] = useState([])
   const [loading, setLoading] = useState(true)
+  const [reload, setReload] = useState(1)
 
   const getMovies = async () => {
     setLoading(true);
     try {
-      const res = await fetch('/src/favorites.json');
-      const data = await res.json();
-      setMovies(data.favorite_movies)
+      const res = await axios.get('/src/favorites.json');
+      setMovies(res.data.favorite_movies)
       setLoading(false);
     } catch (e) {
       console.log(e);
@@ -20,7 +21,7 @@ export default function FavoritesPage() {
 
   useEffect(() => {
     getMovies()
-  }, [])
+  }, [reload])
 
 
 
@@ -36,7 +37,7 @@ export default function FavoritesPage() {
                 <h1 className='text-4xl relative'>Loading...</h1>
               </div> :
               <div className='list-none flex flex-col gap-10 pt-20 bg-slate-800'>
-                {movies.map((movie) => <li key={movie.id}>{<Favorite movie={movie}/>}</li>)}
+                {movies.map((movie) => <li key={movie.id}>{<Favorite reload = {reload} setReload = {setReload} movie={movie}/>}</li>)}
               </div>
           }
 

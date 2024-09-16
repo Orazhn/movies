@@ -2,6 +2,8 @@ import { useState } from 'react';
 import Button from '@mui/material/Button';
 import { Link } from 'react-router-dom';
 import { FaHeart } from 'react-icons/fa';
+import axios from "axios";
+import toast from "react-hot-toast";
 
 
 export default function Card(props) {
@@ -12,23 +14,24 @@ export default function Card(props) {
         setLike(!like)
         if (!like)
         {
-            fetch('http://localhost:3000/favorite_movies', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    'ID': movie.id,
-                    'Title': movie.title,
-                    'poster': movie.poster,
-                    'rating': rating,
-                    'reviews': movie.vote_count,
-                    'overview': movie.overview,
-                    'original_language': movie.original_language,
-                    'release_date': movie.release_date,
-                })
-            }).then(response => {
-                console.log(response.json())
+            axios.post('http://localhost:8080/favorite_movies', {
+                'ID': movie.id,
+                'Title': movie.title,
+                'poster': movie.poster,
+                'rating': rating,
+                'reviews': movie.vote_count,
+                'overview': movie.overview,
+                'original_language': movie.original_language,
+                'release_date': movie.release_date,
+            })
+            .then( () => {
+                toast('✅added to Favorite Movies',{
+                    style: {
+                        border: '1px solid black',
+                    }})
+            })
+            .catch(function (error) {
+                console.log(error);
             })
         }
     }

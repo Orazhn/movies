@@ -2,6 +2,7 @@ import {useState} from "react";
 import {FaHeart} from "react-icons/fa6";
 import {Link} from "react-router-dom";
 import toast, {Toaster} from "react-hot-toast";
+import axios from "axios";
 
 function Favorite(props) {
     const {movie} = props
@@ -10,10 +11,10 @@ function Favorite(props) {
     const handleAction = () => {
         setLiked(!liked)
         if (liked) {
-            fetch(`http://localhost:3000/favorite_movies/${movie.id}`, { method: 'DELETE' })
+            axios.delete(`http://localhost:8080/favorite_movies/${movie.id}`)
             .catch(error => console.log(error))
+            props.setReload(props.reload + 1)
             toast('Movie was deleted successfully !')
-            setTimeout(() => location.reload(), 600)
         }
     }
 

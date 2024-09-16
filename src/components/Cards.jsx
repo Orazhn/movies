@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Card from './Card.jsx'
+import axios from 'axios'
 
 export default function Cards(props) {
     const [movies, setMovies] = useState([])
@@ -8,9 +9,8 @@ export default function Cards(props) {
     const getMovies = async () => {
         setLoading(true);
         try {
-          const res = await fetch('src/db.json');
-          const data = await res.json();
-          setMovies(data.results)
+          const res = await axios.get('src/db.json');
+          setMovies(res.data.results)
           setLoading(false);
         } catch (e) {
           console.log(e);

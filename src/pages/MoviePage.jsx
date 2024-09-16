@@ -4,9 +4,11 @@ import {favorite_movies as favorites} from '../favorites.json';
 import {FaStar, FaHeart, FaArrowLeft} from "react-icons/fa6";
 import { useState} from "react";
 import toast, {Toaster} from "react-hot-toast";
+import axios from 'axios';
 
 
 function MoviePage() {
+
     const [like, setLike] = useState(false)
     const [isActive, setIsActive] = useState(false);
     const {id} = useParams()
@@ -21,30 +23,31 @@ function MoviePage() {
         setLike(!like)
         setIsActive(true)
         if (!like)
-        {
-            fetch('http://localhost:3000/favorite_movies', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({
-                    'ID': movie.id,
-                    'Title': movie.title,
-                    'poster': movie.poster,
-                    'rating': rating,
-                    'reviews': movie.vote_count,
-                    'overview': movie.overview,
-                    'original_language': movie.original_language,
-                    'release_date': movie.release_date,
-                })
-            }).then(response => {
-                console.log(response.json())
+            axios.post('http://localhost:8080/favorite_movies', {
+                'ID': movie.id,
+                'Title': movie.title,
+                'poster': movie.poster,
+                'rating': rating,
+                'reviews': movie.vote_count,
+                'overview': movie.overview,
+                'original_language': movie.original_language,
+                'release_date': movie.release_date,
             })
-            toast('✅added to Favorite Movies',{
-                style: {
-                    border: '1px solid black',
-                }})
-        }
+            .then( () => {
+                toast('✅added to Favorite Movies',{
+                    style: {
+                        border: '1px solid black',
+                    }})
+            })
+            .catch(function (error) {
+                console.log(error);
+            })
+
+
+
+
+
+
     }
 
     const rating = Math.round(movie.vote_average)
