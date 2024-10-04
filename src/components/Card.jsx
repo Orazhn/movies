@@ -14,7 +14,7 @@ export default function Card(props) {
         setLike(!like)
         if (!like)
         {
-            axios.post('http://localhost:8080/favorite_movies', {
+            axios.post('http://localhost:3000/favorite_movies', {
                 'ID': movie.id,
                 'Title': movie.title,
                 'poster': movie.poster,

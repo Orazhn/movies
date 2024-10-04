@@ -17,8 +17,8 @@ function LogInPage() {
 
     const getUserData = async () => {
         try {
-            const res = await axios.get('http://localhost:8080/users');
-            setUserData(res)
+            const res = await axios.get('src/db.json');
+            setUserData(res.users)
         } catch (e) {
             console.log(e);
         }

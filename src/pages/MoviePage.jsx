@@ -1,6 +1,6 @@
 import {Link, useParams} from 'react-router-dom';
 import {results as data} from '../db';
-import {favorite_movies as favorites} from '../favorites.json';
+import {favorite_movies as favorites} from '../db.json';
 import {FaStar, FaHeart, FaArrowLeft} from "react-icons/fa6";
 import { useState} from "react";
 import toast, {Toaster} from "react-hot-toast";
@@ -23,7 +23,7 @@ function MoviePage() {
         setLike(!like)
         setIsActive(true)
         if (!like)
-            axios.post('http://localhost:8080/favorite_movies', {
+            axios.post('http://localhost:3000/favorite_movies', {
                 'ID': movie.id,
                 'Title': movie.title,
                 'poster': movie.poster,

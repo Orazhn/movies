@@ -11,7 +11,8 @@ function Favorite(props) {
     const handleAction = () => {
         setLiked(!liked)
         if (liked) {
-            axios.delete(`http://localhost:8080/favorite_movies/${movie.id}`)
+            axios.delete(`http://localhost:3000/favorite_movies/${movie.id}`)
+            window.location.reload()
             .catch(error => console.log(error))
             props.setReload(props.reload + 1)
             toast('Movie was deleted successfully !')

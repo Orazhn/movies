@@ -11,7 +11,7 @@ export default function FavoritesPage() {
   const getMovies = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('/src/favorites.json');
+      const res = await axios.get('/src/db.json');
       setMovies(res.data.favorite_movies)
       setLoading(false);
     } catch (e) {

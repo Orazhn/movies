@@ -17,7 +17,7 @@ function SignUpPage() {
 
     const getUserData = async () => {
         try {
-            const res = await axios.get('http://localhost:8080/users');
+            const res = await axios.get('src/db.json/users');
             setUserData(res)
 
         } catch (e) {
